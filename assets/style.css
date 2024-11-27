@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid pink; */
+}
+
+/* Variables font and colors */
+:root {
+  --font-family-lato: "Lato";
+  --font-family-karla: "Karla";
+
+  --color-blue: #2c3e50;
+  --color-green: #274946;
+  --color-dark-beige: #c7c4be;
+  --color-light-beige: #edebe6;
+  --color-dark-grey: #242424;
+  --color-light-grey: #e4e3e3;
+}
+
+/* Layout grid */
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+/* Global fonts and buttons */
+
+.global__title {
+  font-family: var(--font-family-lato);
+  font-size: 5rem;
+}
+
+.global__description-big {
+  font-family: var(--font-family-karla);
+  color: var(--color-dark-grey);
+  font-size: 2.5rem;
+}
+
+.global--white-text {
+  color: var(--color-light-beige);
+}
+
+.global__btn {
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-family-lato);
+  font-size: 1.75rem;
+  background: var(--color-green);
+  color: var(--color-light-beige);
+  box-shadow: 8px 8px 5px 0px rgb(34, 34, 34);
+  padding: 1.5rem 4rem;
+  max-width: fit-content;
+}
+
+/* Start-page */
+
+.start-page {
+  height: 100vh;
+  background: url(/assets/photos/09-night.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.start-page__wrapper {
+  text-align: center;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.start-page__logo {
+  margin: 2rem;
+  max-height: 12rem;
+}
+
+/* --------------- */
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+  /* Global */
+  .global__title {
+    font-size: 2rem;
+  }
+
+  .global__description-big {
+    font-size: 1rem;
+  }
+  .global__btn {
+    font-size: 1rem;
+  }
+
+  /* Start-page */
+
+  .start-page__wrapper {
+    gap: 1rem;
+  }
+
+  .start-page__logo {
+    max-height: 8rem;
+  }
+}

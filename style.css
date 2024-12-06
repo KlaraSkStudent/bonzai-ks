@@ -333,6 +333,7 @@ Bilder som inte kommer från projektets bildbank är skapade med hjälp av Deep 
   padding: 1rem 4rem;
   max-width: fit-content;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .global__btn--wide100 {
